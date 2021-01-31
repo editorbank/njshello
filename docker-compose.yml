@@ -1,0 +1,8 @@
+version: '2'
+services:
+  njshello:
+    image: njshello
+    build: .
+    ports:
+    - 85:80
+    restart: always
