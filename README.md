@@ -1,16 +1,15 @@
 # Nginx JavaScript Hello
 
 ## Windows:
-### Run
+Run
 ```
 start .\bin\run
 ```
-### Open
+Open
 ```
 start http://localhost:85
 ```
-
-### Clean
+Clean
 ```
 .\bin\clean
 ```
@@ -18,19 +17,19 @@ start http://localhost:85
 
 ## Linux:
 
-### Run
+Run
 ```
 ./bin/run.sh
 ```
-### Open
+Open
 http://localhost:85
 
-### Clean
+Clean
 ```
 ./bin/clean.sh
 ```
 
-## Run throws docker-compose
+## Run via docker-compose
 ```
 docker-compose up
 ```
