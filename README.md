@@ -1,15 +1,15 @@
 # Nginx JavaScript Hello
 
 ## Windows:
-Run
+* Run
 ```
 start .\bin\run
 ```
-Open
+* Open
 ```
 start http://localhost:85
 ```
-Clean
+* Clean
 ```
 .\bin\clean
 ```
@@ -17,14 +17,14 @@ Clean
 
 ## Linux:
 
-Run
+* Run
 ```
 ./bin/run.sh
 ```
-Open
+* Open
 http://localhost:85
 
-Clean
+* Clean
 ```
 ./bin/clean.sh
 ```
@@ -33,5 +33,6 @@ Clean
 ```
 docker-compose up
 ```
- 
+## Image in Docker Hub
+[https://hub.docker.com/r/editorbank/njshello](https://hub.docker.com/r/editorbank/njshello)
 
