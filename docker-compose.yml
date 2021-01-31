@@ -1,7 +1,7 @@
 version: '2'
 services:
   njshello:
-    image: njshello
+    image: editorbank/njshello
     build: .
     ports:
     - 85:80
