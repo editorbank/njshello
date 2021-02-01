@@ -5,3 +5,5 @@ function njs_version(r) {
 function hello_name_function(r) {
     return(process.env["HELLO_NAME"]);
 }
+
+export default {njs_version, hello_name_function};
