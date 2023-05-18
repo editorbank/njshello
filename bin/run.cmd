@@ -1,1 +1,5 @@
-docker build -t editorbank/njshello . && docker run -it -p 85:80 --name njshello_njshello_1 editorbank/njshello
+@set this_file=%~dpn0
+@set this_file=%this_file:\=/%
+@set this_file=%this_file::=%
+@call %~dp0gw.cmd bash %this_file%.sh
+

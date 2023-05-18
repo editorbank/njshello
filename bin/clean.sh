@@ -1,7 +1,11 @@
-#!/bin/sh
-docker container stop njshello_njshello_1 || docker container kill njshello_njshello_1
-docker rm -f njshello_njshello_1
-docker rmi -f editorbank/njshello
-docker image prune -f
-docker images -a
+#!
+source $(dirname $0)/config.sh
 
+if [ ! -z "$($docker ps -a -f name=$docker_container -q)" ] ;then
+  $docker container stop $docker_container || $docker container kill $docker_container
+  $docker rm -f $docker_container
+fi
+
+if [ ! -z "$($docker images -f reference=$docker_image -q)" ] ;then
+  $docker rmi -f $docker_image
+fi
